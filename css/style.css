@@ -1,0 +1,2534 @@
+/* Base Start ------------------------------ */
+
+:root {
+    --th-bg-1: #163A4F;
+    --th-bg-2: #ED5A2E;
+    --th-bg-3: #ffffff;
+    --th-bg-4: #F5F4F4;
+    --th-text-1: #494949;
+    --th-text-2: #999999;
+    --th-text-3: #ffffff;
+    --th-text-4: #163A4F;
+    --th-text-5: #ED5A2E;
+    --th-fs-h1: 64px;
+    --th-fs-h2: 32px;
+    --th-fs-h3: 28px;
+    --th-fs-h4: 22px;
+    --th-fs-h5: 20px;
+    --th-fs-h6: 18px;
+    --font-family: 'Open Sans Hebrew';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container-xxl {
+    max-width: 1800px;
+    padding: 0px 60px !important;
+}
+
+section {
+    overflow: hidden;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family);
+    letter-spacing: -1px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: var(--th-fs-h1);
+}
+
+h2 {
+    font-size: var(--th-fs-h2);
+}
+
+h3 {
+    font-size: var(--th-fs-h3);
+}
+
+h4 {
+    font-size: var(--th-fs-h4);
+}
+
+h5 {
+    font-size: var(--th-fs-h5);
+}
+
+h6 {
+    font-size: var(--th-fs-h6);
+}
+
+p {
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h6);
+    line-height: 1.5;
+}
+
+a {
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h6);
+    text-decoration: none;
+}
+
+.th-btn {
+    padding: 10px 25px;
+    border-radius: 12px;
+    border: none;
+    display: inline-block;
+    background-color: var(--th-bg-3);
+    color: #101010;
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h6);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.th-btn.light {
+    background-color: var(--th-bg-1);
+    color: var(--th-text-3);
+}
+
+.th-btn.dark {
+    background-color: var(--th-bg-2);
+    color: var(--th-text-3);
+}
+
+.show-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 1px 29.7px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.show-more.active,
+.show-more:hover {
+    background-color: var(--th-bg-2);
+    color: var(--th-bg-3);
+}
+
+.show-more .text h3 {
+    margin: 0;
+    line-height: 1;
+}
+
+.show-more .icon {
+    font-size: var(--th-fs-h3);
+    transition: all .5s;
+}
+
+.show-more.active .icon {
+    transform: rotate(-180deg);
+}
+
+main {
+    margin-top: 112px;
+}
+
+#home-page main {
+    margin-top: 0px;
+}
+
+/* Scroll Bar style start */
+
+*::-webkit-scrollbar {
+    width: 10px;
+    transition: all .5s;
+}
+
+    *::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--th-bg-2);
+}
+
+
+/* Scroll Bar style End */
+
+/* Breadcrum Section Start ------------------------------ */
+.breadcrum {
+    height: 454px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.breadcrum-1 h1 {
+    padding-left: 10px;
+    margin: 0px;
+    line-height: 1;
+    border-left: 5px solid var(--th-text-5);
+}
+
+.breadcrum-1 p {
+    color: var(--th-text-3) !important;
+    font-size: var(--th-fs-h5) !important;
+    margin-top: 20px;
+    max-width: 500px;
+    line-height: 1.5 !important;
+}
+
+#campus-page .breadcrum {
+    background: linear-gradient(90deg, #0E2939 0%, rgba(24, 55, 79, 0.45) 100%), url(../image/campus-breadcru.jpg);
+    background-position: left top;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+#message-page .breadcrum {
+    background-image: url(../image/message-breadcrum.jpg);
+}
+
+#admission-page .breadcrum {
+    background-image: url(../image/admission-breadcrum.jpg);
+}
+
+#career-page .breadcrum {
+    background-image: url(../image/careers-breadcru.jpg);
+}
+
+#life-at-mps-page .breadcrum {
+    background: linear-gradient(90deg, #0E2939 0%, rgba(24, 55, 79, 0.45) 100%), url(../image/life-breadcrum.jpg);
+    background-position: left top;
+    background-size: cover;
+}
+
+#traning-n-placement-page .breadcrum {
+    background-image: linear-gradient(90deg, #0E2939 0%, rgba(24, 55, 79, 0.45) 100%), url(../image/traning-n-placement.jpg);
+}
+
+.breadcrum p {
+    color: var(--th-text-5);
+    font-size: var(--th-fs-h2);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2;
+    /* 237.5% */
+}
+
+.breadcrum h1 {
+    color: var(--th-text-3);
+}
+
+.br-top {
+    background-color: var(--th-bg-1);
+    padding: 10px 0px;
+}
+
+.br-top h4 {
+    color: var(--th-text-3);
+}
+
+.br-top h6 {
+    color: var(--th-text-5);
+}
+
+.page-map {
+    background-color: #ECF1F5;
+    margin-top: 20px;
+    padding-top: 4px;
+}
+
+.pama-box {
+    padding: 6px 20px;
+    border-top: 4px solid var(--th-bg-2);
+    background-color: var(--th-text-3);
+}
+
+.pama-box.light {
+    text-transform: uppercase;
+    background-color: transparent;
+    border-top: 4px solid transparent;
+}
+
+.pama-box p {
+    margin: 0;
+}
+
+/* ------------- Breadcrum Section End ------------- */
+
+/* ------------- Base End ------------- */
+
+
+/* 01. Header Section Start ------------------------------ */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header {
+    padding: 15px 0px;
+    background: linear-gradient(90deg, rgba(237, 237, 237, 0) 0%, rgba(111, 111, 111, 0) 100%);
+    transition: all .5s;
+}
+
+.header .navbar-brand {
+    max-width: 220px;
+    width: 100%;
+    transition: all .5s;
+}
+
+#header.active .navbar-brand {
+    max-width: 150px;
+}
+
+.header .nav-link {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px;
+    color: var(--th-text-3);
+}
+
+#header.active .header.header-dark {
+    background-color: var(--th-bg-1);
+}
+
+.header.header-dark .nav-link {
+    color: var(--th-text-3);
+}
+
+#header.active .header.header-light {
+    background-color: var(--th-bg-3);
+}
+
+.header.header-light .nav-link {
+    color: var(--th-text-4);
+}
+
+.header .menu-btn {
+    cursor: pointer;
+}
+
+.header.header-dark .menu-btn .fa-sharp {
+    font-size: var(--th-fs-h3);
+    color: var(--th-text-3);
+}
+
+.header.header-light .menu-btn .fa-sharp {
+    font-size: var(--th-fs-h3);
+    color: var(--th-text-4);
+}
+
+#home-page .header-light {
+    display: none;
+}
+
+#message-page .header-dark,
+#career-page .header-dark,
+#life-at-mps-page .header-dark,
+#awards-n-recognization-page .header-dark,
+#traning-n-placement-page .header-dark,
+#admission-page .header-dark,
+#about-page .header-dark,
+#campus-page .header-dark,
+#academics-page .header-dark,
+#programmes-page .header-dark,
+#contact-page .header-dark {
+    display: none;
+}
+
+.close-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--th-bg-1);
+    padding-bottom: 50px;
+}
+
+.close-btn {
+    background-color: #061A2A;
+    padding: 20px;
+}
+
+.close-btn .text {
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h4);
+    color: var(--th-bg-3);
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+.close-btn .fa-solid {
+    font-size: var(--th-fs-h2);
+    color: var(--th-bg-3);
+    cursor: pointer;
+}
+
+.close-nav-container {
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+
+.close-nav {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.close-nav ul {
+    width: 100%;
+    text-align: center;
+}
+
+.close-nav ul li {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.close-nav ul a {
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h3);
+    font-weight: 400;
+    color: var(--th-bg-3);
+    transition: all .5s;
+}
+
+.close-nav ul a:hover {
+    color: var(--th-bg-2);
+}
+
+/* ------------- Header Section End ------------- */
+
+
+/* 02.Hero Section Start ------------------------------ */
+.hh-img img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hh-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hh-text h5 {
+    color: var(--th-text-3);
+    font-weight: 700;
+    line-height: 27.24px;
+    letter-spacing: 0.08em;
+}
+
+.hh-icon {
+    margin-top: 20px;
+}
+
+.hh-icon .fas {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid var(--th-text-3);
+    font-size: var(--th-fs-h5);
+    color: var(--th-text-3);
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 30px;
+}
+
+.hh-text h1 {
+    color: var(--th-text-3);
+    position: relative;
+}
+
+.hh-text h1:nth-child(1)::before,
+.hh-text h1:nth-child(2)::before {
+    content: ' ';
+    width: 50%;
+    height: 4px;
+    background-color: var(--th-bg-2);
+    position: absolute;
+    bottom: 0;
+}
+
+.hh-text h1:nth-child(1)::before {
+    left: 0;
+}
+
+.hh-text h1:nth-child(2)::before {
+    right: 0;
+}
+
+/* ------------- Hero Section End ------------- */
+
+/* 03.About Section Start ------------------------------ */
+.ab-left {
+    padding: 60px;
+}
+
+.abl-text {
+    padding: 20px 0px;
+}
+
+.abl-title {
+    font-family: var(--font-family);
+    font-size: 96px;
+    font-weight: bolder;
+    line-height: 1.2;
+    color: var(--th-text-3);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--th-bg-2);
+}
+
+.abl-p {
+    color: var(--th-bg-1);
+}
+
+.ab-right {
+    height: 100%;
+    width: 100%;
+    background-color: var(--th-bg-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.abr-text h2 {
+    color: var(--th-text-3);
+}
+
+.abr-text h3,
+.abr-text p {
+    color: var(--th-text-3);
+    margin-bottom: 20px;
+}
+
+/* ------------- About Section End ------------- */
+
+/* 04.Important Announcements Section Start ------------------------------ */
+.important-announcements {
+    padding: 80px 0px;
+}
+
+.impa-left {
+    background-color: var(--th-bg-2);
+    padding: 50px 30px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--th-text-3);
+}
+
+.impa-sl-item {
+    background-color: rgba(237, 237, 237, 1);
+    padding: 40px 20px;
+    height: 380px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider-arrow {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.slider-arrow .fa-solid {
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--th-bg-2);
+    color: var(--th-text-3);
+    cursor: pointer;
+}
+
+.slider-arrow.light .fa-solid {
+    background-color: transparent;
+    color: var(--th-text-3);
+    border: 1px solid var(--th-bg-3);
+}
+
+.slider-arrow.light.primary .fa-solid {
+    background-color: rgba(61, 61, 61, 0.76);
+}
+
+/* ------------- Important Announcements Section End ------------- */
+
+/* 05.College Experience Section Start ------------------------------ */
+.college-experience {
+    padding: 80px 0px;
+    background-color: var(--th-bg-1);
+}
+
+.h-line {
+    width: 10px;
+    height: 100%;
+    background-color: var(--th-bg-2);
+}
+
+.h-text {
+    color: var(--th-text-3);
+    text-transform: uppercase;
+}
+
+.h-textsdf p {
+    color: var(--th-text-3);
+}
+
+.ce-card-box {
+    position: relative;
+}
+
+.ce-card-box .cec-text {
+    position: absolute;
+    bottom: 20%;
+    background: linear-gradient(90deg, rgba(34, 25, 25, 0.50) 0%, rgba(71, 46, 46, 0.34) 100%);
+    backdrop-filter: blur(7.699999809265137px);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.ce-card-box .cec-text h6 {
+    color: var(--th-text-3);
+    margin-bottom: 0;
+}
+
+/* ------------- College Experience Section End ------------- */
+
+/* 06.Explore Programm Section Start ------------------------------ */
+.explore-programm {
+    padding: 100px 0px;
+}
+
+.main-heading {
+    display: flex;
+    gap: 10px;
+    justify-content: stretch;
+    color: var(--th-bg-1);
+}
+
+.main-heading .mh-line {
+    width: 10px;
+    /* height: 68px !important; */
+    background-color: var(--th-bg-2);
+}
+
+
+.expr-s-item {
+    padding: 30px;
+}
+
+.expr-s-item.primary-co {
+    background-color: var(--th-bg-1);
+}
+
+.expr-s-item.secondary-co {
+    background-color: var(--th-bg-2);
+}
+
+.expr-s-item h4 {
+    color: var(--th-text-3);
+}
+
+.expr-s-item img {
+    margin: 20px 0px;
+}
+
+.expr-s-item p a {
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: underline;
+    color: var(--th-text-3);
+}
+
+/* ------------- Explore Programm Section End ------------- */
+
+/* 07. Admission Year Section Start ------------------------------ */
+.admission-year {
+    padding: 80px 0px;
+    background-image: linear-gradient(180deg, #163A4F 0.01%, rgba(21, 62, 95, 0.8) 100%), url(../image/admission-year.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.admission-year h2 {
+    color: var(--th-text-3);
+}
+
+.adye-left h3,
+.adye-left p {
+    color: var(--th-text-3);
+}
+
+.adye-right {
+    background: rgba(0, 0, 0, 0.49);
+    backdrop-filter: blur(7.7px);
+    padding: 40px;
+    color: var(--th-text-3);
+}
+
+/* .adye-right {
+    background: rgba(0, 0, 0, 0.49);
+    padding: 40px;
+} */
+
+.adye-right .form-control,
+.adye-right .form-select,
+.adye-right textarea {
+    width: 100%;
+    background-color: var(--th-bg-3);
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.adye-right .form-control::placeholder,
+.adye-right .form-select::placeholder,
+.adye-right textarea::placeholder {
+    color: var(--th-text-1);
+    font-family: var(--font-family)3;
+    font-size: var(--th-fs-h6);
+    font-weight: 400;
+    line-height: 1.2;
+    /* 31.989px */
+}
+
+/* ------------- Admission Year Section End ------------- */
+
+/* 08. Placement Partner Section Start ------------------------------ */
+.placement-partner {
+    padding: 80px 0px;
+}
+
+/* .plpa-left{
+    max-width: 600px;
+    margin: auto;
+} */
+.plpa-left h4 {
+    color: var(--th-text-4);
+}
+
+.plpa-statis h1 {
+    color: var(--th-text-5);
+}
+
+.plpa-statis h6 {
+    color: var(--th-text-4);
+}
+
+.plpa-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--th-bg-1);
+    padding: 30px;
+}
+
+.plpa-box h5,
+.plpa-box p {
+    margin: 0;
+    color: var(--th-text-3);
+}
+
+.plpa-logo {
+    margin-top: 80px;
+    background-color: var(--th-bg-2);
+    padding: 10px 0px;
+}
+
+/* ------------- Placement Partner Section End ------------- */
+
+
+/* 09. Why Choose Us Section Start ------------------------------ */
+.why-choose-us {
+    padding: 80px 0px;
+}
+
+.why-choose-us .main-heading {
+    margin-bottom: 30px;
+}
+
+.whchus {
+    margin-top: 30px;
+}
+
+.whchus-box {
+    text-align: center;
+    padding: 50px;
+    height: 100%;
+}
+
+.whchus-box img {
+    max-width: 75px;
+    width: 100%;
+    margin: auto;
+}
+
+.whchus-box p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.whchus .row .col-md-3:nth-child(1),
+.whchus .row .col-md-3:nth-child(2),
+.whchus .row .col-md-3:nth-child(3) {
+    border-right: 1px solid var(--th-text-2);
+    border-bottom: 1px solid var(--th-text-2);
+}
+
+.whchus .row .col-md-3:nth-child(4) {
+    border-bottom: 1px solid var(--th-text-2);
+}
+
+.whchus .row .col-md-3:nth-child(5),
+.whchus .row .col-md-3:nth-child(6),
+.whchus .row .col-md-3:nth-child(7) {
+    border-right: 1px solid var(--th-text-2);
+
+}
+
+/* ------------- Why Choose Us Section End ------------- */
+
+
+/* 10.Students Life Section Start ------------------------------ */
+.student-life {
+    background-color: var(--th-bg-1);
+    color: var(--th-text-3);
+    padding: 80px 0px;
+}
+
+.student-life .main-heading h2 {
+    color: var(--th-text-3);
+}
+
+.stli-left .main-heading,
+.stli-left p {
+    margin-bottom: 25px;
+}
+
+.stli-left .stli-content {
+    margin-top: 50px;
+}
+
+.stli-box {
+    background-color: var(--th-bg-3);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.stli-box h4 {
+    display: inline;
+    color: var(--th-bg-1);
+}
+
+.stli-box p {
+    display: inline;
+    color: var(--th-bg-1);
+}
+
+.stli-right {
+    height: 100%;
+}
+
+.stli-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------- Students Life Section End ------------- */
+
+/* 11.Our Campus Section Start ------------------------------ */
+.our-campus {
+    height: 650px;
+    background-image: url(../image/our-campas.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.ouca-head {
+    background-color: var(--th-bg-3);
+    padding: 50px;
+    height: 250px;
+}
+
+.ouca-head h2 {
+    color: var(--th-text-4);
+    text-align: end;
+    text-transform: uppercase;
+}
+
+.ouca-box {
+    width: 100%;
+    max-width: 682px;
+    background-color: var(--th-bg-2);
+    padding: 80px 50px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ouca-inner {
+    max-width: 70%;
+    margin: auto;
+    color: var(--th-text-3);
+}
+
+.ouca-inner h3 {
+    color: var(--th-text-3);
+    text-align: center;
+}
+
+/* ------------- Our Campus Section End ------------- */
+
+/* 12.Footer Section Start ------------------------------ */
+.footer {
+    background-color: var(--th-bg-1);
+    padding: 50px 0px;
+}
+
+.footer .link-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.footer .link-list ul {
+    list-style: none;
+}
+
+.footer .link-list ul li {
+    margin-bottom: 15px;
+}
+
+.footer .link-list a {
+    color: var(--th-text-3);
+    font-size: var(--th-fs-h6);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer .logo {
+    max-width: 250px;
+}
+
+.footer .subscribe {
+    margin-top: 100px;
+    background-color: var(--th-bg-3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer .subscribe input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.footer .loc {
+    margin-top: 30px;
+}
+
+.footer .loc h6 {
+    color: var(--th-text-2);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.footer .loc a {
+    color: var(--th-text-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ------------- Footer Section End ------------- */
+
+
+
+
+/* ----------======================== About Us Page ========================---------- */
+
+
+/* 13.About Hero Section Start ------------------------------ */
+.abhe-left {
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+    margin: auto;
+}
+
+.abhe-left .main-heading {
+    margin-bottom: 30px;
+}
+
+/* ------------- About Hero Section End ------------- */
+
+/* 14.Our History Section Start ------------------------------ */
+.our-history {
+    padding: 80px 0px;
+    background-color: var(--th-bg-1);
+}
+
+.our-history h2 {
+    color: var(--th-text-3);
+}
+
+.ouhi-box {
+    height: 100% !important;
+}
+
+.ouhi-slider {
+    position: relative;
+}
+
+.ouhi-slider::before {
+    content: ' ';
+    background-color: var(--th-text-3);
+    width: 100%;
+    height: 2px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+
+/* ------------- Our History Section End ------------- */
+
+/* 15.Top Management Section Start ------------------------------ */
+.top-management {
+    background-color: var(--th-bg-2);
+    padding: 80px 0px;
+}
+
+.top-management .mh-line {
+    background-color: var(--th-bg-1);
+}
+
+.top-management .mh-text h2 {
+    color: var(--th-text-3);
+}
+
+.toma-box {
+    background-color: var(--th-bg-3);
+    padding: 25px 10px;
+    text-align: center;
+    height: 100%;
+    border-bottom: 6px solid var(--th-text-4);
+}
+
+.toma-box .toma-img {
+    margin-bottom: 40px;
+}
+
+.toma-box .toma-text h4 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.toma-box .toma-text p {
+    color: var(--th-text-2);
+}
+
+/* ------------- Top Management Section End ------------- */
+
+
+/* ----------======================== Contact Page ========================---------- */
+
+/* 16.Contact Hero Section Start ------------------------------ */
+.cohe-top {
+    background-color: var(--th-bg-1);
+    padding: 20px 0px;
+}
+
+.cohe-top h2 {
+    color: var(--th-text-3);
+}
+
+.cohe-top img {
+    max-width: 65px;
+    width: 100%;
+}
+
+.cohe-bottom {
+    padding: 80px 0px;
+    background-color: var(--th-bg-4);
+}
+
+.cohe-left {
+    width: 600px;
+    margin: auto;
+    padding: 60px;
+    background-color: var(--th-bg-3);
+    position: relative;
+    left: 200px;
+}
+
+.cohe-le-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cohe-le-box .link-black a {
+    color: #000;
+}
+
+/* ------------- Contact Hero Section End ------------- */
+
+
+/* 17.FAQs Section Start ------------------------------ */
+.faqs {
+    padding: 80px 0px;
+    background: var(--th-bg-4);
+}
+
+.fa-head {
+    background-color: var(--th-bg-1);
+    color: var(--th-bg-3);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.faq-box {
+    background: var(--th-bg-3);
+    margin-top: 15px;
+}
+
+.faq-h {
+    padding: 10px 30px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-h p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.faq-text {
+    display: none;
+    padding: 20px;
+}
+
+.faq-text p {
+    margin: 0;
+}
+
+/* ------------- FAQs Section End ------------- */
+
+
+/* ----------======================== Academics Page ========================---------- */
+
+/* 18.Academics All Data Section Start ------------------------------ */
+.academics-all-data {
+    padding: 50px 0px;
+}
+
+.acalda-tab {
+    border-top: 10px solid var(--th-bg-2);
+    padding: 50px 20px;
+    box-shadow: 3px 1px 29.7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.acalda-tab-box {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(211, 211, 211, 1);
+}
+
+.acalda-tab-box:nth-child(3) {
+    border-bottom: 0px solid rgba(211, 211, 211, 1);
+}
+
+.acalda-tab-box .acalda-tab-upper {
+    color: rgba(84, 84, 84, 1);
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h4);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.456px;
+}
+
+.acalda-tab-box .acalda-tab-upper.active {
+    color: var(--th-text-5);
+}
+
+.acalda-tab-inner li {
+    color: var(--th-text-2);
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h5);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 30px */
+    letter-spacing: -0.38px;
+    text-transform: capitalize;
+    /* padding: 5px 0px; */
+    margin-top: 10px;
+}
+
+.acalda-tab-inner li.active {
+    color: var(--th-text-5);
+}
+
+.acalda-tab-btn {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.acalda-tab-container h4 {
+    /* font-family: var(--font-family); */
+    background-color: var(--th-bg-1);
+    color: var(--th-bg-3);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.pdf-box {
+    padding: 15px 30px;
+    background-color: var(--th-bg-4);
+    margin-bottom: 15px;
+}
+
+.pdf-box a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pdf-left h5 {
+    display: inline;
+    color: var(--th-text-4);
+}
+
+.pdf-left p {
+    display: inline;
+    color: var(--th-text-1);
+    margin-bottom: 0;
+}
+
+.pdf-right img {
+    width: 100%;
+    max-width: 70px;
+}
+
+.seminars-container {
+    padding: 50px;
+}
+
+.seco-card {
+    padding: 30px 10px;
+    text-align: center;
+    background-color: var(--th-bg-3);
+    border: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.seco-card h5,
+.seco-card h6 {
+    color: var(--th-text-4);
+    text-align: center;
+}
+
+.seco-card .card-link a {
+    color: var(--th-text-5);
+    text-decoration: underline;
+}
+
+/* ------------- Academics All Data Section End ------------- */
+
+/* ----------======================== Programmes Page ========================---------- */
+
+/* 19.Explore Programmes Section Start ------------------------------ */
+.explore-programmes {
+    padding: 50px 0px;
+}
+
+.expr-left {
+    border-top: 10px solid var(--th-bg-2);
+    padding: 50px 20px;
+    box-shadow: 3px 1px 29.7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.expr-upper-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.expr-upper-btn h4 {
+    margin: 0;
+}
+
+.expr-upper-btn .fa-solid {
+    color: var(--th-text-5);
+    transform: rotate(-90deg);
+    font-size: var(--th-fs-h4);
+}
+
+.expr-upper-btn.active {
+    margin-bottom: 0;
+}
+
+.expr-upper-btn.active .fa-solid {
+    transform: rotate(0deg);
+}
+
+.expr-upper-content {
+    display: none;
+    padding: 20px 10px;
+}
+
+.expr-inner-btn {
+    background-color: var(--th-bg-4);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all .5s;
+}
+
+.expr-inner-btn .text {
+    color: var(--th-text-1);
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h5);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.expr-inner-btn .icon {
+    color: var(--th-text-1);
+    font-size: var(--th-fs-h5);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: all .5s;
+}
+
+.expr-inner-btn.active {
+    margin-bottom: 0;
+}
+
+.expr-inner-btn.active .icon {
+    transform: rotate(180deg);
+}
+
+.expr-list {
+    padding: 5px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.expr-list li {
+    color: var(--th-text-1);
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h5);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.expr-list li:hover {
+    color: var(--th-text-5);
+}
+
+.expr-list li.active {
+    color: var(--th-text-5);
+}
+
+.expr-tab-container h4 {
+    background-color: var(--th-bg-1);
+    color: var(--th-bg-3);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.expr-main-box {
+    background-color: var(--th-bg-4);
+    padding: 50px;
+}
+
+.expr-main-box h4 {
+    color: #434343;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.expr-line-box {
+    padding: 28px 30px;
+    border-left: 4px solid var(--th-text-5);
+    background: var(--th-bg-3);
+    box-shadow: 4px 4px 19.6px 0px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+
+.expr-line-box h5 {
+    color: var(--th-text-4);
+}
+
+/* ------------- Explore Programmes Section End ------------- */
+
+
+/* ----------======================== Our Campus Page ========================---------- */
+/* 21.Campus Main Section Start ------------------------------ */
+.campus-main {
+    padding-bottom: 50px;
+}
+
+.cama-outer-box {
+    margin-top: 50px;
+}
+
+.cama-slider {
+    position: relative;
+    max-height: 469px;
+}
+
+.cama-slider .slider-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cama-text {
+    padding: 30px;
+    color: var(--th-text-3);
+}
+
+.cama-text.primary {
+    background-color: var(--th-bg-1);
+}
+
+.cama-text.secondary {
+    background-color: var(--th-bg-2);
+}
+
+.slick-list.draggable {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ------------- Campus Main Section End ------------- */
+
+/* ----------======================== Admission Page ========================---------- */
+/* 22.Notification Section Start ------------------------------ */
+.notification {
+    padding: 80px 0px;
+}
+
+.no-left {
+    background-color: var(--th-bg-2);
+    padding: 46px;
+    min-width: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.no-left h4 {
+    color: var(--th-text-3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.no-box {
+    border-left: 24px solid var(--th-bg-1);
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.79);
+    margin-bottom: 10px;
+}
+
+.no-box h5,
+.no-box p {
+    display: inline;
+    color: var(--th-text-4);
+}
+
+/* ------------- Notification Section End ------------- */
+
+
+/* 23.Admission Procedure Section Start ------------------------------ */
+.admission-procedure {
+    padding: 80px 0px;
+}
+
+.adpr-contianer {
+    position: relative;
+}
+
+.adpr-contianer::before {
+    content: ' ';
+    width: 75%;
+    height: 2px;
+    background-color: var(--th-bg-2);
+    position: absolute;
+    z-index: -1;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.adpr-box {
+    margin-top: 20px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.adpr-box .adpr-img {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    background-color: var(--th-bg-3);
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    border: 2px solid var(--th-text-4);
+    margin-bottom: 20px;
+}
+
+/* ------------- Admission Procedure Section End ------------- */
+/* 24.Entrance Section Start ------------------------------ */
+.entrance {
+    padding: 80px 0px;
+}
+
+.en-right.no-left {
+    background-color: var(--th-bg-1);
+    position: relative;
+    right: 230px;
+}
+
+.en-right .no-box {
+    border-left: 24px solid var(--th-bg-2);
+}
+
+.en-right h6 {
+    color: var(--th-text-3);
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: 400;
+}
+
+.en-box {
+    background: #F3F3F3;
+    padding: 20px 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.en-box h5 {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--th-bg-2);
+    color: var(--th-text-3);
+}
+
+.en-box p {
+    margin: 0;
+}
+
+/* ------------- Entrance Section End ------------- */
+
+/* 25.Fee Structure Section Start ------------------------------ */
+.fee-structure {
+    padding: 80px 0px;
+}
+
+.fee-structure table {
+    margin-top: 50px;
+}
+
+.fee-structure th {
+    text-align: center;
+    background-color: var(--th-bg-2);
+    padding: 21px 0px;
+    color: var(--th-text-3);
+    font-weight: 400;
+    font-size: var(--th-fs-h4);
+}
+
+.fee-structure td {
+    font-weight: 700;
+    font-size: var(--th-fs-h5);
+    text-align: center;
+    padding: 21px 0px;
+    color: var(--th-text-4);
+}
+
+/* ------------- Fee Structure Section End ------------- */
+
+/* 26.Financial Aid Section Start ------------------------------ */
+.financial-aid {
+    padding: 80px 0px;
+}
+
+.fiai-right {
+    min-width: 800px;
+    background-color: #FAF7F7;
+    padding: 20px;
+    position: relative;
+    right: 400px;
+}
+
+.fiai-inner-box {
+    border: 2px solid var(--th-text-5);
+    padding: 70px 50px;
+}
+
+/* ------------- Financial Aid Section End ------------- */
+
+/* ----------======================== Training & Placement Page ========================---------- */
+
+
+/* 28.T&P Companies Section Start ------------------------------ */
+.tp-companie {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.tpco-upper-box {
+    padding: 80px;
+    background-color: var(--th-bg-1);
+}
+
+.tpco-upper-box .main-heading {
+    margin-bottom: 20px;
+}
+
+.tpco-upper-box .main-heading h2 {
+    color: var(--th-text-3);
+}
+
+.tpco-upper-box p {
+    color: var(--th-text-3);
+}
+
+.tpco-box {
+    padding: 20px;
+    background-color: var(--th-bg-3);
+    border-radius: 20px;
+    width: 219px !important;
+    text-align: center;
+    color: var(--th-text-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tpco-box p {
+    margin: 0px;
+    color: var(--th-text-4);
+}
+
+/* ------------- T&P Companies Section End ------------- */
+
+/* 29.Corporate Communication Centre Section Start ------------------------------ */
+.corporate-communication {
+    padding-bottom: 80px;
+}
+
+.coco-left img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.coco-right {
+    background-color: var(--th-bg-2);
+    padding: 80px;
+}
+
+.coco-right-upper {
+    background-color: var(--th-bg-2);
+}
+
+.coco-right .main-heading {
+    margin-bottom: 30px;
+}
+
+.coco-right .mh-line {
+    background-color: var(--th-bg-1);
+}
+
+.coco-right h2 {
+    color: var(--th-text-3);
+}
+
+.coco-right p {
+    text-transform: capitalize;
+    color: var(--th-text-3);
+    margin-top: 20px;
+}
+
+/* ------------- Corporate Communication Centre Section End ------------- */
+
+
+/* 30.Placement Procedure Section Start ------------------------------ */
+.placement-procedure {
+    padding: 50px 0px;
+}
+
+.placement-procedure h2 {
+    color: var(--th-text-4);
+    margin-bottom: 20px;
+}
+
+.plpr-box {
+    border-bottom: 6px solid var(--th-text-4);
+    box-shadow: 2px 2px 24.6px 0px rgba(0, 0, 0, 0.07);
+    background-color: var(--th-bg-3);
+    text-align: center;
+    padding: 30px 20px;
+    height: 100%;
+}
+
+.plpr-box.secondary {
+    border-bottom: 6px solid var(--th-text-5);
+}
+
+.plpr-box h2 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: var(--th-text-3);
+    background: var(--th-bg-1);
+
+}
+
+.plpr-box.secondary h2 {
+    background-color: var(--th-bg-2);
+}
+
+.plpr-box h5 {
+    color: var(--th-text-4);
+}
+
+/* ------------- Placement Procedure Section End ------------- */
+
+/* 31.Industry Interaction Cell Section Start ------------------------------ */
+.industry-interaction-cell {
+    padding-top: 80px;
+}
+
+.industry-interaction-cell.industry-interaction-cell-3 {
+    padding-bottom: 80px;
+}
+
+.industry-interaction-cell h2 {
+    text-align: center;
+    color: var(--th-text-4);
+}
+
+.inince-box {
+    padding: 20px;
+    position: relative;
+}
+
+.inince-text {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    padding: 40px;
+    color: var(--th-text-3);
+}
+
+.industry-interaction-cell .slider-arrow .fa-solid {
+    background-color: rgba(244, 244, 244, 0.76);
+    color: var(--th-text-1);
+    border: 2px solid #D6D6D6;
+}
+
+/* ------------- Industry Interaction Cell Section End ------------- */
+
+/* ----------======================== Awards & Recognization Page ========================---------- */
+
+/* 32.Awards to College Section Start ------------------------------ */
+.awtoco-box {
+    border: 1px solid #DCDCDC;
+    background: var(--th-bg-3);
+    padding: 10px;
+}
+
+.awtoco-text {
+    padding: 20px;
+    text-align: center;
+}
+
+.awtoco-text h4 {
+    margin-bottom: 15px;
+}
+
+.awtoco-top h3 {
+    color: var(--th-bg-1);
+}
+
+.awtoco-top h6 {
+    color: var(--th-bg-1);
+    font-weight: 400;
+}
+
+.awtoco-bottom p {
+    font-size: var(--th-fs-h5);
+}
+
+#awards-n-recognization-page .slick-dots li.slick-active button:before {
+    color: var(--th-bg-2);
+    font-size: var(--th-fs-h6);
+}
+
+#awards-n-recognization-page .slick-dots li button:before {
+    color: rgb(210, 210, 210);
+    font-size: var(--th-fs-h6);
+    transition: all .5s;
+}
+
+#awards-n-recognization-page .slick-dots li:hover button:before {
+    color: var(--th-bg-2);
+}
+
+/* ------------- Awards to College Section End ------------- */
+
+
+/* ----------======================== Life At Dr.MPS Page ========================---------- */
+#life-at-mps-page .mh-line {
+    height: 32px;
+}
+
+/* 33.Community Section Start ------------------------------ */
+.community {
+    background-color: var(--th-bg-2);
+    padding: 80px 0px;
+}
+
+.community .mh-line {
+    background-color: var(--th-bg-1);
+}
+
+.community h2,
+.community p {
+    line-height: 2;
+    color: var(--th-text-3);
+}
+
+/* ------------- Community Section End ------------- */
+
+/* 34.Fests Section Start ------------------------------ */
+.fests {
+    padding-top: 50px;
+}
+
+.fests .slick-dots {
+    width: auto;
+    bottom: 14px;
+}
+
+.fests.left .slick-dots {
+    left: 10px;
+}
+
+.fests.right .slick-dots {
+    right: 10px;
+}
+
+.fe-box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+#life-at-mps-page .slick-dots li.slick-active button:before {
+    color: var(--th-bg-2);
+    font-size: var(--th-fs-h6);
+}
+
+#life-at-mps-page .slick-dots li button:before {
+    color: var(--th-bg-3);
+    opacity: 1;
+    font-size: var(--th-fs-h6);
+    transition: all .5s;
+}
+
+#life-at-mps-page .slick-dots li:hover button:before {
+    color: var(--th-bg-2);
+}
+
+.fe-container {
+    position: relative;
+}
+
+.fe-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.fe-text-box {
+    background-color: var(--th-bg-3);
+    padding: 30px;
+}
+
+/* ------------- Fests Section End ------------- */
+
+
+/* 35.Photo Gallery Section Start ------------------------------ */
+.photo-gallery {
+    padding: 80px 0px;
+}
+
+.phga-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px;
+    padding: 10px;
+}
+
+.phga-container .item {
+    position: relative;
+}
+
+.phga-container .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.phga-container .item-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.phga-container .item-2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.phga-container .item-3 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.phga-container .item-4 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.phga-container .item-5 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.phga-container .item-6 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.phga-container .item-7 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.phga-container .item-8 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.phga-container .item-9 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .phga-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 200px);
+    }
+
+    .phga-container .item-1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+
+    .phga-container .item-2,
+    .phga-container .item-3,
+    .phga-container .item-4,
+    .phga-container .item-5,
+    .phga-container .item-6,
+    .phga-container .item-7,
+    .phga-container .item-8,
+    .phga-container .item-9 {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    .phga-container .item-4 {
+        grid-column: span 2;
+    }
+
+    .phga-container .item-5 {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .phga-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 200px);
+    }
+
+    .phga-container .item {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .phga-container .item-1,
+    .phga-container .item-2,
+    .phga-container .item-3,
+    .phga-container .item-4,
+    .phga-container .item-5,
+    .phga-container .item-6,
+    .phga-container .item-7,
+    .phga-container .item-8,
+    .phga-container .item-9 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+/* ------------- Photo Gallery Section End ------------- */
+
+/* ----------======================== Careers Page ========================---------- */
+
+/* 36.Why work with us? Section Start ------------------------------ */
+.why-work {
+    padding: 80px 0px;
+}
+
+.whwo-box {
+    position: relative;
+}
+
+.whwo-text {
+    position: absolute;
+    bottom: 50px;
+    margin: 0px 20px;
+    padding: 50px 30px;
+    background-color: var(--th-bg-3);
+    text-align: center;
+    border-top: 7px solid var(--th-text-5);
+}
+
+/* ------------- Why work with us? Section End ------------- */
+
+/* 37.Current Openings Section Start ------------------------------ */
+.current-openings {
+    padding-bottom: 80px;
+}
+
+.current-openings h2 {
+    color: var(--th-text-4);
+}
+
+.cuop-box {
+    border: 1px solid #CFCFCF;
+    background: var(--th-bg-3);
+    padding: 20px;
+}
+
+.cuop-left p:nth-child(2) {
+    font-size: var(--th-fs-h4);
+}
+
+.cuop-left p:nth-child(3) {
+    margin-bottom: 40px;
+    color: #898989;
+}
+
+.cuop-left p:nth-child(4) {
+    margin: 0px;
+    color: #898989;
+}
+
+.cuop-right a {
+    font-size: var(--th-fs-h6);
+    color: var(--th-text-5);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* ------------- Current Openings Section End ------------- */
+
+
+
+/* ----------======================== Message Page ========================---------- */
+
+/* 38.Message Section Start ------------------------------ */
+.message {
+    padding: 80px 0px;
+}
+
+.mes-box {
+    margin-bottom: 50px;
+}
+
+.mes-img {
+    width: 100%;
+    height: 100%;
+}
+
+.mes-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mes-text {
+    padding: 100px 50px;
+    position: relative;
+    color: var(--th-text-3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mes-text h4:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.mes-text p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.mes-text p:nth-child(3) {
+    margin-bottom: 50px;
+}
+
+.mes-text.primary {
+    background-color: var(--th-bg-1);
+}
+
+.mes-text.secondary {
+    background-color: var(--th-bg-2);
+}
+
+.mes-text.primary .mess-quo {
+    right: 10px;
+}
+
+.mes-text.secondary .mess-quo {
+    left: 10px;
+}
+
+.mes-text.secondary .mh-line {
+    background-color: var(--th-bg-1);
+}
+
+.mes-text .mess-quo {
+    position: absolute;
+    top: 10px;
+    max-width: 550px;
+    width: 80%;
+}
+
+.mes-text .mh-text h4:nth-child(1) {
+    color: var(--th-text-3);
+}
+
+.mes-text .mh-text h4:nth-child(2) {
+    color: var(--th-text-3);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* ------------- Message Section End ------------- */
+
+
+/* ----------======================== Landing Page ========================---------- */
+
+/* 39.header Section Start ------------------------------ */
+#landing-page #headers {
+    position: relative;
+    background-color: var(--th-bg-3);
+}
+#landing-page main {
+   margin-top: 0px;
+}
+#landing-page .ab-left {
+   padding: 0px;
+}
+
+#landing-page #headers .hl-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#landing-page #headers .hl-left {
+    max-width: 150px;
+    width: 100%;
+}
+
+#landing-page #headers .hl-left img {
+    width: 100%;
+}
+
+#landing-page #headers .hl-right ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#landing-page #headers .hl-right ul li a {
+    color: #000;
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h5);
+    font-weight: 400;
+    line-height: 27.24px;
+}
+
+/* ------------- header Section End ------------- */
+
+/* 40.Hero Landing Section Start ------------------------------ */
+.hero-landing {
+    padding: 100px 0px;
+    background: url(../image/landing/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hela-left {
+    color: var(--th-bg-3);
+}
+
+.hela-left h1:nth-child(1) {
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.hela-left h1:nth-child(2) {
+    font-weight: 900;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--th-bg-2);
+    display: inline-block;
+}
+
+.hela-left p {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.hela-left a {
+    display: inline-block;
+}
+
+.hela-right {
+    background-color: var(--th-bg-2);
+    padding: 50px;
+}
+
+.hela-text {
+    width: 80%;
+    text-align: center;
+    color: var(--th-bg-3);
+    margin: auto;
+}
+.hela-btn {
+    margin-top: 20px;
+    gap: 10px;
+    text-align: center;
+}
+.hela-btn .th-btn.light {
+    border: 1px solid var(--th-bg-1);
+}
+
+.hela-btn .th-btn.dark {
+    border: 1px solid var(--th-bg-4);
+}
+.landing-num{
+    padding: 50px 0px;
+}
+
+/* ------------- Hero Landing Section End ------------- */
+
+/* 41. Landing Courses Section Start ------------- */
+.landing-courses{
+    padding: 80px 0px;
+    background: url(../image/landing/course-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.laco-outer{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 50%;
+    border: 6px solid var(--th-bg-3);
+    padding: 20px;
+}
+.laco-inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--th-bg-3);
+    border: 8px solid var(--th-bg-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.laco-inner h3{
+    text-transform: uppercase;
+}
+.laco-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.laco-box .laco-item{
+    padding: 4px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--th-bg-3);
+}
+.laco-box .laco-item .laco-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.laco-box .laco-item .laco-num{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: var(--th-bg-3);
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: var(--th-fs-h4);
+    color: var(--th-bg-1);
+}
+.laco-box .laco-item .laco-text h4,
+.laco-box .laco-item .laco-text h6{
+    margin: 0;
+    letter-spacing: .5px;
+    display: inline-block;
+}
+.laco-box .laco-item:nth-child(odd){
+background-color: var(--th-bg-2);
+}
+.laco-box .laco-item:nth-child(even){
+background-color: var(--th-bg-1);
+}
+
+/* ------------- Landing Courses Section End ------------- */
+
+
+.reserv-seat{
+    padding: 80px 0px;
+    background: url(../image/landing/reserv-seat.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reserv-seat .rese-box{
+    border-top:10px solid var(--th-bg-2) ;
+    padding: 50px 0px;
+    background-color: var(--th-bg-3);
+}
+.reserv-seat .hela-right{
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    background-color: var(--th-bg-3);
+}
+.reserv-seat .hela-right .hela-text{
+    color: var(--th-bg-1);
+    width: 100%;
+}
+.re-left{
+    background-color: var(--th-bg-2);
+    padding: 50px;
+    position: relative;
+}
+.re-left::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--th-bg-2);
+    transform: skew(20deg) translateX(50px);
+}
+#landing-page .re-left h2{
+   color: var(--th-bg-3);
+   position: relative;
+   z-index: 10;
+}
+#landing-page .awtoco-box{
+   height: 100%;
+   min-height: 410px;
+}
+#landing-page .awtoco-img{
+    width: 100px;
+    height: 100px;
+    border: 50%;
+    margin: auto;
+
+}
+
+#landing-page  .industry-interaction-cell .slider-arrow .fa-solid {
+    background-color: var(--th-bg-2);
+    color: var(--th-bg-3);
+    border: 2px solid var(--th-bg-2);
+}
+
+#landing-page .slick-dots li.slick-active button:before {
+    color: var(--th-bg-2);
+    font-size: var(--th-fs-h6);
+}
+
+#landing-page .slick-dots li button:before {
+    color: rgb(210, 210, 210);
+    font-size: var(--th-fs-h6);
+    transition: all .5s;
+}
+
+#landing-page .slick-dots li:hover button:before {
+    color: var(--th-bg-2);
+}
+
+.landing-faq{
+    padding: 50px 0px;
+}
+.landing-faq .faq-box{
+    background-color: transparent !important;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 30px;
+}
+.landing-faq .faq-h{
+   border: none;
+   padding: 0px;
+   align-items: center;
+}
+.landing-faq .faq-h p{
+    font-weight: 600;
+}
+.landing-faq .faq-text{
+   max-width: 80%;
+   color: rgba(111, 108, 144, 1);
+   padding: 10px 0 0 0;
+}
+.landing-faq .fa-solid{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+border-radius: 50%;
+}
+.landing-faq .slick-dots{
+ margin-top: 30px !important;
+}
+.header-foot {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--th-bg-3);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.header-foot .hefo-box{
+    text-align: center;
+}
+.header-foot .hefo-box p{
+    color: var(--th-text-1);
+    margin: 10px 0 0 0;
+}
+.header-foot .hefo-box img{
+    width: 50px;
+    margin: auto;
+}
+#footers .footer .logo{
+    margin: auto;
+}
